@@ -1,8 +1,149 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-title: Home
-banner: "/assets/images/banners/home.jpeg"
+layout: about
+title: About
 ---
+
+<style>
+  .publication {
+    margin-bottom: 10px;
+  }
+
+  .conference {
+    font-style: italic;
+  }
+
+  .bibtex {
+    display: none;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: monospace;
+    width: 95%;
+    /* Limit width to enhance readability */
+    overflow: auto;
+    /* Ensures content is scrollable if too long */
+  }
+</style>
+
+
+<h2>About me</h2>
+
+<p>I am currently a final-year Ph.D. candidate in <a href="https://www.cs.rutgers.edu">Computer Science</a> at <a
+    href="https://www.rutgers.edu">Rutgers University</a>, where I am fortunate to be mentored by Professor <a
+    href="https://mlml.kaist.ac.kr/">Sungjin Ahn</a>. My research focuses on creating general-purpose agents capable of
+  human-like perception and behavior. Specifically, I explore areas such as:</p>
+
+<ul>
+  <li><strong>Deep Generative Models:</strong> such as VAEs and Diffusion Models.</li>
+  <li><strong>Reinforcement Learning:</strong> with a focus on Offline-RL and Model-Based RL.</li>
+  <li><strong>Representation Learning:</strong> focusing on World Model Learning, Unsupervised Structured
+    Representation, and Visual Reasoning.</li>
+</ul>
+
+<p>Outside of my academic life, I am passionate about sports, including 🏸, 🏀, and 🏊. I also enjoy bird watching🦜 and
+  hiking, which allow me to connect with nature and fuel my creativity.</p>
+
+
+
+<h2>Publications</h2>
+<ul>
+  <li class="publication">
+    <strong>Orchestrating Hierarchical Planning via D-Conductor and Q-Performer</strong>
+    <ul>
+      <li> <strong>Chang Chen</strong>, Fei Deng, Junyeob Baek, Kenji Kawaguchi, Caglar Gulcehre,
+        Sungjin
+        Anh</li>
+      <li class="conference">International Conference on Machine Learning, 2024</li>
+    </ul>
+
+    <a class="button" onclick="toggleBib('bibtex_plandq')">BIB</a>
+    <a class="button" href="https://arxiv.org/pdf/2406.06793">PDF</a>
+    <a class="button" href="https://github.com/changchencc/PlanDQ">CODE</a>
+    <pre id="bibtex_plandq" class="bibtex">
+    @inproceedings{
+      anonymous2024plandq,
+      title={Plan{DQ}: Hierarchical Plan Orchestration via D-Conductor and Q-Performer},
+      author={Anonymous},
+      booktitle={Forty-first International Conference on Machine Learning},
+      year={2024},
+      url={https://openreview.net/forum?id=17ZwoHl65h}
+    }
+    </pre>
+  </li>
+
+  <li class="publication">
+    <strong> Simple Hierarchical Planning with Diffusion</strong>
+    <ul>
+      <li> <strong>Chang Chen</strong>, Fei Deng, Kenji Kawaguchi, Caglar Gulcehre,
+        Sungjin
+        Anh</li>
+      <li class="conference">International Conference on Learning Representations, 2024</li>
+    </ul>
+    <a class="button" onclick="toggleBib('bibtex_simple')">BIB</a>
+    <a class="button" href="https://arxiv.org/pdf/2401.02644.pdf">PDF</a>
+    <a class="button" href="https://github.com/changchencc/Simple-Hierarchical-Planning-with-Diffusion">CODE</a>
+    <pre id="bibtex_simple" class="bibtex">
+    @inproceedings{
+      chen2024simple,
+      title={Simple Hierarchical Planning with Diffusion},
+      author={Chang Chen and Fei Deng and Kenji Kawaguchi and Caglar Gulcehre and Sungjin Ahn},
+      booktitle={The Twelfth International Conference on Learning Representations},
+      year={2024},
+      url={https://openreview.net/forum?id=kXHEBK9uAY}
+      }
+    </pre>
+  </li>
+
+  <li class="publication">
+    <strong>TransDreamer: Reinforcement Learning with Transformer World Models</strong>
+    <ul>
+      <li> <strong>Chang Chen</strong>, Yi-Fu Wu*, Jaesik Yoon* and Sungjin Ahn</li>
+      <li class="conference">NeurIPS 2021, Workshop on DeepRL</li>
+    </ul>
+    <a class="button" onclick="toggleBib('bibtex_transdreamer')">BIB</a>
+    <a class="button" href="https://arxiv.org/pdf/2202.09481.pdf">PDF</a>
+    <a class="button" href="https://github.com/changchencc/TransDreamer">CODE</a>
+    <pre id="bibtex_transdreamer" class="bibtex">
+    @article{chen2022transdreamer,
+      title={Transdreamer: Reinforcement learning with transformer world models},
+      author={Chen, Chang and Wu, Yi-Fu and Yoon, Jaesik and Ahn, Sungjin},
+      journal={arXiv preprint arXiv:2202.09481},
+      year={2022}
+    }
+    </pre>
+  </li>
+
+  <li class="publication">
+    <strong>ROOTS: Object-Centric Representation and Rendering of 3D Scenes</strong>
+    <ul>
+      <li> <strong>Chang Chen</strong>, Fei, Deng*, Sungjin Ahn</li>
+      <li class="conference">Journal of Machine Learning Research, 2021</li>
+    </ul>
+    <a class="button" onclick="toggleBib('bibtex_root')">BIB</a>
+    <a class="button" href="https://www.jmlr.org/papers/volume22/20-1176/20-1176.pdf">PDF</a>
+    <a class="button" href="https://sites.google.com/view/roots3d">WEBSITE</a>
+    <pre id="bibtex_root" class="bibtex">
+    @article{chen2021roots,
+      title={Roots: Object-centric representation and rendering of 3d scenes},
+      author={Chen, Chang and Deng, Fei and Ahn, Sungjin},
+      journal={Journal of Machine Learning Research},
+      volume={22},
+      number={259},
+      pages={1--36},
+      year={2021}
+    }
+    </pre>
+  </li>
+
+
+</ul>
+
+<script>
+  function toggleBib(elementId) {
+    var bib = document.getElementById(elementId);
+    if (bib) {
+      bib.style.display = bib.style.display === 'block' ? 'none' : 'block';
+    }
+  }
+</script>
